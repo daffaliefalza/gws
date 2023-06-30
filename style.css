@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #ff4081, #ffc107);
+  background-size: 400% 400%;
+  animation: gradientAnimation 2s infinite;
+  font-family: Arial, sans-serif;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.animated-text {
+  position: relative;
+  display: inline-block;
+  animation: moveText 2s infinite;
+}
+
+@keyframes moveText {
+  0% {
+    left: -50px;
+  }
+  50% {
+    left: 50px;
+  }
+  100% {
+    left: -50px;
+  }
+}
+
+.emoji-container {
+  display: flex;
+  justify-content: center;
+}
+
+.emoji {
+  font-size: 48px;
+  margin: 0 10px;
+  animation: rotateEmoji 2s infinite;
+}
+
+@keyframes rotateEmoji {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
